@@ -1397,6 +1397,7 @@ cdef class TransitionMiniBatch:
         cdef TransitionPtr next_ptr
 
         # assign data at t
+        print('assigning data at t')
         self._assign_observation(
             batch_index=batch_index,
             ptr=ptr,
