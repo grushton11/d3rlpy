@@ -1209,6 +1209,8 @@ cdef class TransitionMiniBatch:
     ):
         self._transitions = transitions
 
+        self.testing = 'hello!'
+
         # determine observation shape
         cdef tuple observation_shape = transitions[0].get_observation_shape()
         cdef int observation_ndim = len(observation_shape)
